@@ -1,0 +1,136 @@
+/* Estilos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima de 100% da viewport */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #0302FE; /* Borda dourada na parte inferior */
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    max-width: 100px;
+    border: 3px solid ; /* Borda dourada na logo */
+    border-radius: 50%; /* Borda circular para a logo */
+    padding: 5px; /* Espaçamento interno */
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    color: gold;
+    border: 1px solid w;
+
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    flex: 1; /* Cresce para ocupar todo o espaço disponível */
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about,
+#games {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: gold; /* Cor do título */
+}
+
+p {
+    font-size: 24px;
+}
+
+/* Estilos para a lista de jogos */
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos para os cartões de jogos */
+.game-card {
+    width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #000000;
+    text-align: center;
+    border: 1px solid gold; /* Borda dourada nos cards */
+    position: relative; /* Posição relativa para o cartão */
+    cursor: pointer;/*Muda o ponteiro do mause*/
+}
+.game-card a {
+    text-decoration: none; /* Remove a linha abaixo do texto do link */
+    color: inherit; /* Mantém a cor do texto */
+}
+
+.game-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0); /* Fundo preto absoluto */
+    opacity: 0.5; /* Opacidade do fundo preto */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    z-index: 1; /* Coloca a imagem sobre o fundo preto */
+
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.container_footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container_footer p {
+    font-size: 12px; /* Tamanho do texto menor */
+    margin: 0; /* Remove margens */
+}
